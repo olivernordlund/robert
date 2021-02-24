@@ -37,24 +37,12 @@ p {
   -webkit-margin-after: 0em;
 }
 
-a {
-  font-size: inherit;
-  text-decoration: none;
-  color: inherit;
-  transition: color .2s ease;
-}
-
-a:hover {
-  color: rgb(120, 120, 120);
-}
-
-.container {
-  margin: 0 auto;
-  padding: 1rem 1rem 0 1rem;
+.info {
+  display: flex;
   align-items: center;
 }
 
-.info {
+p.text {
   display: flex;
   justify-content: center;
 }
@@ -129,10 +117,8 @@ body {
 
 <body>
 
-<div class="container">
-  <div class="info">
-    <p>Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</p>
-  </div>
+<div class="info">
+    <p class="text">Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</p>
 </div>
 
 </body>
