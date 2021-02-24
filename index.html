@@ -13,6 +13,16 @@
   <![endif]-->
 <style>
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +40,20 @@ body {
   line-height: 1.2;
   color: rgb(252, 252, 252);
   text-align: center;
+}
+
+ul {
+  height: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  /* align-self: center; */
+  align-items: center;
+  background: silver;
+  width: 100%;
+  height: 20%;
 }
 
 p {
@@ -118,9 +142,9 @@ body {
 
 <body>
 
-<div class="info">
-    <p class="text">Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</p>
-</div>
+  <ul>
+  <li><p>Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</p></li>
+</ul>
 
 </body>
 </html>
