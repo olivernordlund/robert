@@ -62,17 +62,29 @@ li {
   height: 100%;
 }
 
-li.mail {
-  display: none;
+button a span.yo {display: flex}
+button a span.hey {display: none}
+
+button:hover a span.yo {display: none}
+button:hover a span.hey {display: flex}
+
+button {
+  font-size: 2.5rem;
+  font-family: 'FG-Con', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.1;
+  color: rgb(252, 252, 252);
+  text-align: center;
+  text-transform: uppercase;
+  background: none;
+  border: none;
 }
 
-li.info a:hover + li.mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+a {
+  text-decoration: none;
+  color:#fff;
 }
+
 
 
 
@@ -147,8 +159,14 @@ body {
 <body>
 
   <ul>
-  <li class="info"><a>Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</a></li>
-  <li class="mail"><a href="mailto:studio@robertholmkvist.com ">studio@robertholmkvist.com</a></li>
+  <li class="info">
+    <button>
+      <a href="mailto:studio@robertholmkvist.com">
+        <span class="yo">Studio Robert Holmkvist </br>Design & Art Direction</span>
+        <span class="hey">studio@robertholmkvist.com</span>
+      </a>
+    </button>
+  </li>
 </ul>
 
 </body>
