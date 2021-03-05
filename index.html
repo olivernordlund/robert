@@ -62,7 +62,11 @@ li {
   height: 100%;
 }
 
-li.info:hover + li.mail {
+li.mail {
+  display: none;
+}
+
+li.info a:hover + li.mail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,9 +74,7 @@ li.info:hover + li.mail {
   height: 100%;
 }
 
-li.mail {
-  display: none;
-}
+
 
 body {
   -webkit-animation: fadein 2s;
@@ -145,7 +147,7 @@ body {
 <body>
 
   <ul>
-  <li class="info">Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</li>
+  <li class="info"><a>Studio Robert Holmkvist</br>Bondegatan 21A · 116 33 Stockholm</a></li>
   <li class="mail"><a href="mailto:studio@robertholmkvist.com ">studio@robertholmkvist.com</a></li>
 </ul>
 
